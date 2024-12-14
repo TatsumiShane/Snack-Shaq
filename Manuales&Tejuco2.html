@@ -1,0 +1,374 @@
+    <!DOCTYPE html>
+    <html>
+    <Head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <title>Menu</title>
+        <link rel="icon" type="image/x-icon" href="Icons/Logo.png">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <!-- css file -->
+        <link rel="stylesheet" type="text/css" href="Manuales-Tejuco2.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    </head> 
+
+    <body>
+    	<!-- header start -->
+    	<header class ="header">
+    		<!-- logo -->
+    		<a href="1-index.html" class="logo">
+    		<img src="SnackShaq.jpg">
+    		</a>
+
+    		<!-- nav bar start -->
+    		<nav class="navbar">
+    		     <input type="checkbox" id="check">
+    		        <label for="check" class="check-btn">
+    		        	<i class="fas fa-bars"></i>
+    		        </label>
+    		      <ul>
+    		      <li><a href="Manuales&Tejuco.html">Home</a></li>
+    		      <li><a class="active" href="Manuales&Tejuco2.html"></a></li>
+    		      </ul>
+    		      <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+    		      </nav>
+    		      <!-- nav bar end -->
+
+
+    		      <!-- hyperlink with icons (search, cart, profile, menu button) -->
+    		      <div class = "icons">
+    		      <div class="cart-container" onmouseover="showCartForm()" onmouseout="hideCartForm()">
+    		          <a href="4-cart.html">
+    		          <div class = "fas fa-shopping-cart" id="cartButton"></div>
+    		          </a>
+    		             <div class="cart-form" id="cartForm">
+    		                <form>
+    		                   <div id="cartItems"></div>
+    		                   <div id="total-price">Total Price: P<span id="totalPrice"> 0.00</span></div>
+    		                </form>
+    		              </div>
+    		       <div>    
+    		       <!-- hypeelink with icons (search, cart, profile, menu button) -->
+    		    </header>
+    		    <!-- header end -->
+
+    		    <!-- Menu Section -->
+    		 <section class="menu" id="menu">
+    		 <h1 class="heading">SNACK <span>LIST</span></h1>
+    		 <p class="heading-description">Bite some goodness into your break.</p>
+
+
+    		 <div class="category-text"><h3>Chips</h3></div>
+
+    	<div class="menu">
+    		<div class="container menu-section">
+    		    <!-- product 1 -->
+    		    <div class="menu-box">
+                             <div class="menu-img">
+                                 <img src="Fries.jpg" alt="Fries">
+                                </div>
+                                <div class="menu-content">
+                                <h3>Fries</h3>
+                                <p> Shaq'olicious</p>
+                                <div onclick="addToCart('Fries Cheese','P60.00','Fries.jpg','item-s'); return false;">
+                                <button id="item-s">Cheese <span>P60.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Fries Sour Cream','P60.00','Fries.jpg','item-m'); return false;">
+                                <button id="item-m">Sour Cream <span>P60.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Fries BBQ','P60.00','Fries.jpg','item-l'); return false;">
+                                <button id="item=l">BBQ <span>P60.00</span></button>
+                                </div>
+                            </div>   
+                        </div>                     
+                  
+                  <!-- product 2 -->
+                   <div class="menu-box">
+                             <div class="menu-img">
+                                 <img src="Nacho.jpg" alt="Nacho">
+                                </div>
+                                <div class="menu-content">
+                                <h3>Nacho</h3>
+                                <p> Shaq loves 'em fresh</p>
+                                <div onclick="addToCart('Nacho Cheese ','P75.00','Nacho.jpg','item-s'); return false;">
+                                <button id="item-s">Nacho Cheese<span>P75.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Nacho Sour Cream','P75.00','Nacho.jpg','item-m'); return false;">
+                                <button id="item-m">Nacho Sour Cream <span>P75.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Nacho BBQ ','P75.00','Nacho.jpg','item-l'); return false;">
+                                <button id="item=l">Nacho BBQ<span>P75.00</span></button>
+                                </div>
+                            </div>   
+                        </div>                     
+                       <!-- product 3 -->
+                        <div class="menu-box">
+                             <div class="menu-img">
+                                 <img src="MOZA.jpg" alt="Mozarella Sticks">
+                                </div>
+                                <div class="menu-content">
+                                <h3>Mozarella Sticks</h3>
+                                <p> Finger Lickin' Good</p>
+                                <div onclick="addToCart('Mozarella Sticks (Small)','P90.00','MOZA.jpg','item-s'); return false;">
+                                <button id="item-s">Mozarella Small <span>P90.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Mozarella Sticks (Medium)','P100.00','MOZA.jpg','item-m'); return false;">
+                                <button id="item-m">Mozarella Medium <span>P100.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Mozarella Sticks (Large)','P120.00','MOZA.jpg','item-l'); return false;">
+                                <button id="item=l">Mozarella Large <span>P120.00</span></button>
+                                </div>
+                            </div>   
+                        </div>                     
+                        <!-- product 4 -->
+                         <div class="menu-box">
+                             <div class="menu-img">
+                                 <img src="Hotteok.jpg" alt="Hotteok">
+                                </div>
+                                <div class="menu-content">
+                                <h3>Hotteok</h3>
+                                <p> Love Every Bite</p>
+                                <div onclick="addToCart('Hotteok (Small)','P90.00','Hotteok.jpg','item-s'); return false;">
+                                <button id="item-s">Hotteok Small <span>P90.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Hotteok (Medium)','P100.00','Hotteok.jpg','item-m'); return false;">
+                                <button id="item-m">Hotteok Medium <span>P100.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Hotteok (Large)','P120.00','Hotteok.jpg','item-l'); return false;">
+                                <button id="item=l">Hotteok Large <span>P120.00</span></button>
+                                </div>
+                            </div>   
+                        </div>                     
+
+                        <!-- Add more menu items here with the same structure -->
+                     </div>  
+
+                        <div class="category-text"><h3>Shaq'o Dunk</h3></div>
+
+                      <div class="container menu-section">
+                      	  <!-- product 1 -->
+                       <div class="menu-box">
+                             <div class="menu-img">
+                                 <img src="DOSHA.jpg" alt="Double Shaq">
+                                </div>
+                                <div class="menu-content">
+                                <h3>Double Shaq</h3>
+                                <p> Why not make it Double?</p>
+                                <div onclick="addToCart('Double Shaq','P90.00','DOSHA.jpg','item-s'); return false;">
+                                <button id="item-s">Orig <span>P90.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Double Shaq','P100.00','DOSHA.jpg','item-m'); return false;">
+                                <button id="item-m">With bacon <span>P100.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Double Shaq','P120.00','DOSHA.jpg','item-l'); return false;">
+                                <button id="item=l">With Bacon and Fries <span>P120.00</span></button>
+                                </div>
+                            </div>   
+                        </div>                     
+
+                        <!-- product 2 -->
+                         <div class="menu-box">
+                             <div class="menu-img">
+                                 <img src="Chicken_Tenders.jpg.jpg" alt="Chicken Tenders">
+                                </div>
+                                <div class="menu-content">
+                                <h3>Chicken Tenders</h3>
+                                <p>Shaq likes 'em juicy</p>
+                                <div onclick="addToCart('Chicken Tenders','P90.00','Chicken_Tenders.jpg.jpg','item-s'); return false;">
+                                <button id="item-s">Orig<span>P90.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Chicken Tenders with Fries','P100.00','Chicken_Tenders.jpg.jpg','item-m'); return false;">
+                                <button id="item-m">With Fries<span>P100.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Chicken Tenders','P120.00','Chicken_Tenders.jpg.jpg','item-l'); return false;">
+                                <button id="item=l">With Fries and Drinks<span>P120.00</span></button>
+                                </div>
+                            </div>   
+                        </div>                     
+
+                        <!-- product 3 -->
+                         <div class="menu-box">
+                             <div class="menu-img">
+                                 <img src="Shawa.jpg" alt="Shawarma Shaq">
+                                </div>
+                                <div class="menu-content">
+                                <h3>Shawarma Shaq</h3>
+                                <p> If it's greasy, it's yummy</p>
+                                <div onclick="addToCart('Shawarma (Small)','P90.00','Shawa.jpg','item-s'); return false;">
+                                <button id="item-s">Small <span>P90.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Shawarma (Medium)','P100.00','Shawa.jpg','item-m'); return false;">
+                                <button id="item-m">Medium <span>P100.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Shawarma (Large)','P120.00','Shawa.jpg','item-l'); return false;">
+                                <button id="item=l">Large <span>P120.00</span></button>
+                                </div>
+                            </div>   
+                        </div>                     
+                                <!-- product 4 -->
+                         <div class="menu-box">
+                             <div class="menu-img">
+                                 <img src="PIZZA.jpg" alt="Pizza">
+                                </div>
+                                <div class="menu-content">
+                                <h3>Shaq's Pizza</h3>
+                                <p>Freshly made using BIG Hands</p>
+                                <div onclick="addToCart('Pizza (Small)','P90.00','PIZZA.jpg','item-s'); return false;">
+                                <button id="item-s">Small <span>P90.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Pizza (Medium)','P100.00','PIZZA.jpg','item-m'); return false;">
+                                <button id="item-m">Medium <span>P100.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Pizza (Large)','P120.00','PIZZA.jpg','item-l'); return false;">
+                                <button id="item=l">Large <span>P120.00</span></button>
+                                </div>
+                            </div>   
+                        </div>                     
+                                <!-- Add more items here with the same structure -->
+                        </div>
+                        
+                        <div class="category-text"><h3>Drinks</h3></div>
+
+                      <div class="container menu-section">
+                           <!-- product 1 -->
+                      <div class="menu-box">
+                             <div class="menu-img">
+                                 <img src="Sundae.jpg" alt="Sundae">
+                                </div>
+                                <div class="menu-content">
+                                <h3>Sundae</h3>
+                                <p>If you can't handle the heat then eat something cold</p>
+                                <div onclick="addToCart('Sundae (Small)','P90.00','Sundae.jpg','item-s'); return false;">
+                                <button id="item-s">Small <span>P90.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Sundae (Medium)','P100.00','Sundae.jpg','item-m'); return false;">
+                                <button id="item-m">Medium <span>P100.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Sundae (Large)','P120.00','Sundae.jpg','item-l'); return false;">
+                                <button id="item=l">Large <span>P120.00</span></button>
+                                </div>
+                            </div>   
+                        </div>   	               
+
+                        <!-- product 2 -->
+                        <div class="menu-box">
+                             <div class="menu-img">
+                                 <img src="SHAKE.jpg" alt="Shake">
+                                </div>
+                                <div class="menu-content">
+                                <h3>Shaq'o Shake</h3>
+                                <p>Feel the rumble</p>
+                                <div onclick="addToCart('Shake (Small)','P90.00','SHAKE.jpg','item-s'); return false;">
+                                <button id="item-s">Small <span>P90.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Shake (Medium)','P100.00','SHAKE.jpg','item-m'); return false;">
+                                <button id="item-m">Medium <span>P100.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Shake (Large)','P120.00','SHAKE.jpg','item-l'); return false;">
+                                <button id="item=l">Large <span>P120.00</span></button>
+                                </div>
+                            </div>   
+                        </div>   	               
+
+                        <!-- product 3 -->
+                        <div class="menu-box">
+                             <div class="menu-img">
+                                 <img src="SODA.jpg" alt="Soda">
+                                </div>
+                                <div class="menu-content">
+                                <h3>Soda</h3>
+                                <p>Oooh Sparkling</p>
+                                <div onclick="addToCart('Soda (Small)','P90.00','SODA.jpg','item-s'); return false;">
+                                <button id="item-s">Small <span>P90.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Soda (Medium)','P100.00','SODA.jpg','item-m'); return false;">
+                                <button id="item-m">Medium <span>P100.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Soda (Large)','P120.00','SODA.jpg','item-l'); return false;">
+                                <button id="item=l">Large <span>P120.00</span></button>
+                                </div>
+                            </div>   
+                        </div>   	               
+
+                               <!-- product 4 -->
+                           <div class="menu-box">
+                             <div class="menu-img">
+                                 <img src="BOBA.jpg" alt="Boba Tea">
+                                </div>
+                                <div class="menu-content">
+                                <h3>Boba Tea</h3>
+                                <p>Enjoy every gulp</p>
+                                <div onclick="addToCart('Boba Tea (Small)','P90.00','BOBA.jpg','item-s'); return false;">
+                                <button id="item-s">Small <span>P90.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Boba Tea (Medium)','P100.00','BOBA.jpg','item-m'); return false;">
+                                <button id="item-m">Medium <span>P100.00</span></button>
+                                </div>
+
+                                <div onclick="addToCart('Boba Tea (Large)','P120.00','BOBA.jpg','item-l'); return false;">
+                                <button id="item=l">Large <span>P120.00</span></button>
+                                </div>
+                            </div>   
+                        </div>
+                        
+                  </section>
+                      <!-- New Section End -->
+
+                         <!-- footer start -->
+                       <section class="footer">
+                        
+                          <div class="container">
+                              <div class="footer-box-1">
+                                  <h3>Location</h3>
+                                  <div class="footer-loc">
+                                  	 <a href="https://www.google.com/maps/place/TUp+-+College+of+Industrial+Technology/@14.5873937,120.9848474,17z/data=!3m1!4b1!3m5!1s0x3397cb93cd451575:0x6247d293ffefede0!8m2!3d14.5873937!4d120.9848474!16s%2F11hfq2I6nk?hl=en&entry=ttu" target=+blank> College of Industrial Technology, 660. TUP, Ermita, Manila, 1000</a>
+                                   </div>
+                                </div>
+
+                                <div class="footer-box">
+                                   <h3>Newsletter</h3>
+                                   <p>Stay updated with out latest.</p>
+                                   <form>
+                                <input type="email" name="email" placeholder="name@gmail.com">
+                                <button type="submit"><i class="fa-solid fa-right-long"></i></button>
+                              <form>
+                           </div>
+
+                           <div class="footer-box">
+                           	<h3>Contact Us.</h3>
+                           	<p>Connect with Us</p>
+                           	<div class="icons">
+                           		<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                           		<a href="#"><i class="fa-brands fa-instagram"></i></a>
+                           		<a href="#"><i class="fa-brands fa-twitter"></i></a>
+                             </div>
+                             
+                          </div>
+                       </div>
+                  </section> 
+                  <!-- footer end -->
+                  <script src="2-menu.js"></script>
+                </body>
+                <html>       		
